@@ -59,22 +59,4 @@ The platform allows donors to donate excess food and volunteers to claim and del
 
 ---
 
-## 📂 Project Structure
 
-
-ResQMeal
-│
-├── resqmeal-frontend
-│ ├── src
-│ ├── components
-│ ├── pages
-│ └── services
-│
-├── resqmeal-backend
-│ ├── controllers
-│ ├── models
-│ ├── routes
-│ ├── middleware
-│ └── server.js
-│
-└── README.md
