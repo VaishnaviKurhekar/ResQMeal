@@ -1,0 +1,115 @@
+/* ================= Google Fonts ================= */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+/* ================= CSS Variables ================= */
+:root {
+  --bg: hsl(80, 20%, 97%);
+  --text: hsl(150, 30%, 10%);
+
+  --card-bg: #ffffff;
+  --border-color: hsl(80, 15%, 88%);
+
+  --primary: hsl(152, 55%, 28%);
+  --secondary: hsl(42, 80%, 55%);
+  --success: hsl(152, 60%, 40%);
+  --danger: hsl(0, 72%, 51%);
+  --warning: hsl(42, 90%, 50%);
+  --info: hsl(200, 70%, 50%);
+
+  --muted-bg: hsl(80, 15%, 92%);
+  --muted-text: hsl(150, 10%, 45%);
+
+  --radius: 0.75rem;
+
+  --gradient-hero: linear-gradient(135deg, hsl(152, 55%, 28%), hsl(152, 45%, 18%));
+  --gradient-warm: linear-gradient(135deg, hsl(42, 80%, 55%), hsl(28, 75%, 50%));
+
+  --shadow-soft: 0 4px 20px -4px rgba(24, 94, 63, 0.12);
+  --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.08);
+  --shadow-elevated: 0 12px 40px rgba(24, 94, 63, 0.2);
+
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
+}
+
+/* ================= Dark Mode ================= */
+body.dark {
+  --bg: hsl(150, 25%, 6%);
+  --text: hsl(80, 15%, 92%);
+  --card-bg: hsl(150, 20%, 10%);
+  --border-color: hsl(150, 15%, 18%);
+}
+
+/* ================= Base ================= */
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+/* ================= Bootstrap Overrides ================= */
+.card {
+  background-color: var(--card-bg);
+  border-radius: var(--radius);
+  border-color: var(--border-color);
+  box-shadow: var(--shadow-card);
+}
+
+.btn-success {
+  background-color: var(--success);
+  border-color: var(--success);
+}
+
+.btn-warning {
+  background-color: var(--warning);
+  border-color: var(--warning);
+  color: #000;
+}
+
+.text-muted {
+  color: var(--muted-text) !important;
+}
+
+/* ================= Custom Utilities ================= */
+.bg-hero {
+  background: var(--gradient-hero);
+  color: #fff;
+}
+
+.bg-warm {
+  background: var(--gradient-warm);
+  color: #fff;
+}
+
+.shadow-soft {
+  box-shadow: var(--shadow-soft);
+}
+
+.shadow-card {
+  box-shadow: var(--shadow-card);
+}
+
+.shadow-elevated {
+  box-shadow: var(--shadow-elevated);
+}
+
+.rounded-xl {
+  border-radius: var(--radius);
+}
+
+/* ================= Text Gradients ================= */
+.text-gradient-primary {
+  background: linear-gradient(135deg, hsl(152, 55%, 28%), hsl(152, 45%, 40%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-warm {
+  background: linear-gradient(135deg, hsl(42, 80%, 55%), hsl(28, 75%, 50%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

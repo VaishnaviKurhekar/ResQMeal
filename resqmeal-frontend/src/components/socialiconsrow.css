@@ -1,0 +1,25 @@
+/* SocialIconsRow Styles */
+.social-icons-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #f0f0f0;
+}
+
+.social-icon:hover {
+  background-color: #28a745;
+  color: white;
+  transform: scale(1.1);
+}

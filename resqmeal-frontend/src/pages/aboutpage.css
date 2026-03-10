@@ -1,0 +1,48 @@
+/* Hero Background */
+
+.bg-hero {
+  position: relative;
+
+  background-image: url("../assets/about-herobg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 350px;
+
+  display: flex;
+  align-items: center;
+}
+
+/* Dark overlay for readability */
+
+.bg-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+/* Ensure text appears above overlay */
+
+.bg-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* About Page Styling */
+
+.about-container {
+  min-height: 100vh;
+  padding: 40px 0;
+}
+
+.about-section {
+  margin-bottom: 30px;
+}
+
+.about-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}

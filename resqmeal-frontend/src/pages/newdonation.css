@@ -1,0 +1,14 @@
+/* NewDonation Styles */
+.newdonation-container {
+  min-height: 100vh;
+  padding: 40px 0;
+}
+
+.newdonation-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.newdonation-form {
+  padding: 30px;
+}

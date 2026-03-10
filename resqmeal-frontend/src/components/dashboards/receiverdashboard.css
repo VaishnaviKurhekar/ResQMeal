@@ -1,0 +1,47 @@
+/* ReceiverDashboard Styles */
+.receiver-dashboard {
+  min-height: 100vh;
+  padding: 20px 0;
+}
+
+.receiver-header {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.receiver-section-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.receiver-donations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.receiver-donation-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.receiver-donation-card:hover {
+  transform: translateY(-3px);
+}
+
+.receiver-claims-list {
+  display: grid;
+  gap: 15px;
+}
+
+.receiver-claim-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}

@@ -1,0 +1,76 @@
+/* VolunteerDashboard Styles */
+.volunteer-dashboard {
+  min-height: 100vh;
+  padding: 20px 0;
+}
+
+.volunteer-header {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.volunteer-header h3 {
+  margin: 0;
+  color: #333;
+  font-weight: 600;
+}
+
+.volunteer-assignments {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.volunteer-assignment-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.volunteer-assignment-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.volunteer-card-body {
+  padding: 20px;
+}
+
+.volunteer-card-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.volunteer-card-info {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.volunteer-card-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  background-color: #e7f3ff;
+  color: #0066cc;
+  margin-top: 10px;
+}
+
+.volunteer-empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: #666;
+}
+
+.volunteer-empty-state h5 {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
