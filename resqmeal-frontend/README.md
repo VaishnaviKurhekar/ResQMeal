@@ -1,62 +1,43 @@
-# 🍱 ResQMeal – Food Donation & Rescue Platform
+# 🍱 ResQMeal Frontend
 
-ResQMeal is a **MERN Stack web application** that helps reduce food waste by connecting **food donors** with **volunteers/receivers** who can collect and distribute food to people in need.
+This is the **frontend of the ResQMeal application**, built using **React.js**.  
+The frontend provides a user-friendly interface for donors and receivers to interact with the ResQMeal platform.
 
-The platform allows donors to donate excess food and volunteers to claim and deliver it efficiently.
+It communicates with the backend API to manage authentication, donations, and claim requests.
 
 ---
 
 ## 🚀 Features
 
-### 👤 User Authentication
-- Secure **Login & Registration**
-- Role based access:
-  - Donor
-  - Receiver / Volunteer
+### 🔐 Authentication
+- User Registration
+- User Login
+- Secure authentication using JWT
 
-### 🍲 Food Donation
-- Donors can:
-  - Add food donation details
-  - Specify quantity
-  - Provide pickup location
-  - Contact details auto-filled from profile
+### 🍲 Donor Features
+- Add new food donation
+- View donated food
+- Automatic contact details in donation form
 
-### 📦 Claim Donation
-- Receivers can:
-  - View available donations
-  - Claim a donation
-  - Pick up food from donor location
+### 📦 Receiver Features
+- View available food donations
+- Claim a donation
+- See pickup details
 
 ### 🔔 Notifications
-- Receivers get notified when donation is available
-- Status updates when food is claimed
+- View notifications related to donations
+- Mark notifications as read
 
-### 📍 Pickup Details
-- Contact name
-- Contact number
-- Pickup location
+### 📱 Responsive UI
+- Clean and responsive interface
+- Works on desktop and mobile devices
 
 ---
 
 ## 🛠️ Tech Stack
 
-### Frontend
-- React.js
-- React Router
-- Tailwind CSS
-- Axios
-
-### Backend
-- Node.js
-- Express.js
-
-### Database
-- MongoDB
-
-### Other Tools
-- Git & GitHub
-- REST APIs
-
----
-
-
+- **React.js**
+- **React Router**
+- **Axios**
+- **Bootstrap**
+- **Lucide React Icons**
