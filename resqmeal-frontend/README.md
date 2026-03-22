@@ -1,16 +1,43 @@
-# React + Vite
+# 🍱 ResQMeal Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the **frontend of the ResQMeal application**, built using **React.js**.  
+The frontend provides a user-friendly interface for donors and receivers to interact with the ResQMeal platform.
 
-Currently, two official plugins are available:
+It communicates with the backend API to manage authentication, donations, and claim requests.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🔐 Authentication
+- User Registration
+- User Login
+- Secure authentication using JWT
 
-## Expanding the ESLint configuration
+### 🍲 Donor Features
+- Add new food donation
+- View donated food
+- Automatic contact details in donation form
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 📦 Receiver Features
+- View available food donations
+- Claim a donation
+- See pickup details
+
+### 🔔 Notifications
+- View notifications related to donations
+- Mark notifications as read
+
+### 📱 Responsive UI
+- Clean and responsive interface
+- Works on desktop and mobile devices
+
+---
+
+## 🛠️ Tech Stack
+
+- **React.js**
+- **React Router**
+- **Axios**
+- **Bootstrap**
+- **Lucide React Icons**
