@@ -118,3 +118,4 @@ useEffect(() => {
 };
 
 export const useAuth = () => useContext(AuthContext);
+
