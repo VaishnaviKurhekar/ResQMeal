@@ -27,8 +27,13 @@ const app = express();
 // expireDonations(); // Run on startup
 app.use(
   cors({
-    origin: ["http://localhost:5173", "http://localhost:5174", "http://localhost:5175"], // frontend URLs
-    credentials: true,               // allow cookies
+    origin: [
+      "http://localhost:5173",
+      "http://localhost:5174",
+      "http://localhost:5175",
+      "https://res-q-meal.vercel.app"
+    ],
+    credentials: true,
   })
 );
 app.use(express.json());
