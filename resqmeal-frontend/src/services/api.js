@@ -1,11 +1,10 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://resqmeal-backend.onrender.com/api",
+  baseURL: import.meta.env.VITE_API_URL,
   withCredentials: true,
 });
 
-//  Attach token to every request
 API.interceptors.request.use((req) => {
   const token = localStorage.getItem("token");
   if (token) {
@@ -14,12 +13,10 @@ API.interceptors.request.use((req) => {
   return req;
 });
 
-//  Handle response errors
 API.interceptors.response.use(
   (res) => res,
   (error) => {
     if (error.response?.status === 401) {
-      // Just clear auth state, don’t force redirect
       localStorage.removeItem("token");
       localStorage.removeItem("user");
     }
