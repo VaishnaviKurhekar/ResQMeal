@@ -13,7 +13,7 @@ import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import ProfilePage from "./pages/ProfilePage";
 import NotFound from "./pages/NotFound";
-import NewDonation from "./pages/newDonation";
+import NewDonation from "./pages/NewDonation";
 
 
 const App = () => {
